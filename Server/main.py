@@ -70,25 +70,30 @@
 # p -> занимает ячейку памяти -> арендует квартиру
 # p -> изменить какие-то данные -> изменяете интерфейс квартиры
 
-def create_person(name, age):
-    return {
-        "name": name,
-        "age": age
-    }
+# array = [
+#     [1, 2],
+#     [4],
+#     [7, 8, 3]
+# ]
 
-def update_person(obj, name, age):
-    obj["name"] = name
-    obj["age"] = age
+# for i in range(len(array)):
+#     for j in range(len(array[i])):
+#         print(array[i][j])
 
-names = []
-n = int(input("Сколько значений вы хотите ввести: "))
-for i in range(n):
-    person = input("Введите данные человека: ").split()
-    p = create_person(person[0], person[1])
-    names.append(p)
 
-### ВАШ КОД ###
+def task(array):
+    # ВАШ КОД #
+    # 1. Посчитать общую сумму всех чисел для каждого подмассива
+    # 2. Создать еще один список с True | False, если сумма всех числе кратна двум
+    # 3. Сложить числа всех подмассивов
+    
+    # ВАШ КОД #
 
-### ВАШ КОД ###
+array = []
+n = int(input("Введите число: "))
+for _ in range(n):
+    numbers = list(map(int, input().split()))
+    array.append(numbers)
 
-print(names)
+print(array)
+task(array)
